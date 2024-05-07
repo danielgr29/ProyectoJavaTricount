@@ -3,7 +3,7 @@ Proyecto de programación en java.
 
 Tricount
 
-Grupo 3. Rafael Jimenez/ Alvaro De Quintana/ Daniel Gutiérrez
+Grupo 3. Rafael Jimenez/ Alvaro De Quinta/ Daniel Gutiérrez
 
 Partes del trabajo:
 
