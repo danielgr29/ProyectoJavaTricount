@@ -1,0 +1,1 @@
+Archivo donde se registra toda la memoria del proyecto
