@@ -4,6 +4,31 @@ Archivo donde se repartiran todas las tareas entre los miebros del grupo:
 
 Tareas: 
 
+Rafa(Jefe)
+	Main
+
+	
+
+Álvaro
+
+
+
+
+
+Daniel Gutiérrez:
+
+	Entorno amigable y de fácil uso.
+
+	Extra 1: Creación de bases de datos para guardar la información.
+
+	presentacion 
+
+	repositorio
+
+
+
+
+
 Existir un menú para Registrarse como usuario o autentificarse
 
 Los usuarios deben autentificarse con nombre de usuario y contraseña
