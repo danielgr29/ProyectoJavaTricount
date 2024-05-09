@@ -9,8 +9,12 @@ Rafa(Jefe)
 
 	
 
-Álvaro
-
+Álvaro:
+Extra 1: Creación de bases de datos para guardar la información.
+			Funcion para descargar la base de datos.(Con uso de variables )
+			Funcion para guardar los cambios en la base de datos. (Update)
+	
+			
 
 
 
@@ -19,11 +23,11 @@ Daniel Gutiérrez:
 
 	Entorno amigable y de fácil uso.
 
-	Extra 1: Creación de bases de datos para guardar la información.
-
 	presentacion 
 
 	repositorio
+
+	Metodos: Añadir un gasto. // Eliminar un gasto. // Clases grupo, Usuarios, gastos// VerSaldo();
 
 
 
@@ -71,7 +75,6 @@ Cada gasto es pagado por un usuario, y será común para todos los participantes
 		Extra 1: Creación de bases de datos para guardar la información.
 		
 		Extra 2: Por otro lado debe establecer una forma de cerrar los gastos de forma que se pueda
-		
 		dar dinero de una persona a otra para cerrar el viaje con el saldo a cero todos los
 		componentes.
 
