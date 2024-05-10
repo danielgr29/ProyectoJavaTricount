@@ -8,6 +8,7 @@ public class main {
 	public static void main(String[] args) {
 		List<Usuario> usuarios= new ArrayList<>();
 		List<Grupo> grupos = new ArrayList<>();
+		List<Gasto> gastos = new ArrayList<>();
 	}
 
 }
