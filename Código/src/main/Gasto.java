@@ -1,4 +1,4 @@
-package proyectoJavaTricount;
+package main;
 
 import java.time.LocalDate;
 
