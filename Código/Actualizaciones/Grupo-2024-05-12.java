@@ -64,17 +64,20 @@ public class Grupo {
         gastosGrupo.remove(gasto);
     }
 
-    public double calcularGAsto() {
-        double totalGastos=0.0;
-        for (Gasto gasto: gastosGrupo){
-            totalGastos+=gasto.getCantidad();//metodo que esta en gastos y devuelve la cantidad// public double getCantidad(){ return cantidad};
+
+    public double calcularSaldo() {
+        double totalGastos = 0.0;
+
+        // Calcular el total de gastos
+        for (Gasto gasto : gastosGrupo) {
+            totalGastos += gasto.getCantidad();//metodo que esta en gastos y devuelve la cantidad// public double getCantidad(){ return cantidad};
         }
 
-        double mediaGastos=totalGastos/gastosGrupo.size();
-        double saldo=0.0;
-        for (Gasto gasto: gastosGrupo){
-            saldo+=gasto.getCantidad()-mediaGastos;
-        }
-        return saldo;
+        // Calcular la media de gastos entre los miembros del grupo
+        int numUsuario=mienbros.size();
+
+        double mediaGastos = numUsuario> 0 ? totalGastos/ numUsuario :0.0     ;
+
+        return mediaGastos;
     }
 }
