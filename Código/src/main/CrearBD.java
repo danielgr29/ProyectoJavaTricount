@@ -55,10 +55,10 @@ public class CrearBD {
                          "FOREIGN KEY (admin) REFERENCES usuarios (nombre));";
                sentencia.executeUpdate(sql);
                sql = "CREATE TABLE gastos(GastosId CHAR(7) NOT NULL, cantidad DOUBLE(12,2) NOT NULL, " +
-                         "descripcion VARCHAR(50), fecha DATE NOT NULL, nombre VARCHAR(30), idGrupo CHAR(7), " +
+                         "descripcion VARCHAR(50), fecha DATE NOT NULL, nombre VARCHAR(30), IdGrupo CHAR(7), " +
                          "PRIMARY KEY(GastosId), " +
                          "FOREIGN KEY (nombre) REFERENCES usuarios (nombre), " +
-                         "FOREIGN KEY (idGrupo) REFERENCES grupos (idGrupo));";
+                         "FOREIGN KEY (IdGrupo) REFERENCES grupos (IdGrupo));";
                sentencia.executeUpdate(sql);
                sql = "CREATE TABLE miembros(nombre VARCHAR(30), IdGrupo CHAR(7), " +
                          "PRIMARY KEY(nombre, IdGrupo), " +
@@ -70,13 +70,13 @@ public class CrearBD {
 
                // sql = "SELECT * FROM usuarios";
                // rs = sentencia.executeQuery(sql);
-               // System.out.println("Lista de alumnos:");
+               // System.out.println("Lista de usuarios:");
                // while (rs.next()) {
                // String nombred = rs.getString("nombre");
-               // String contrd = rs.getString("contr");
+               // String contrad = rs.getString("contra");
                // String nombreCd = rs.getString("nombreCompleto");
-               // System.out.println("Usuario: " + nombred + "\tContr: " + contrd + "\tnombre
-               // "+
+               // System.out.println("Usuario: " + nombred + "\tContra: " + contrad + "\tnombre "
+               // +
                // "completo: " + nombreCd);
                // }
 
