@@ -41,7 +41,7 @@ public class main {
 				usuario=leerString();
 				System.out.print("Contraseña: ");
 				contrasenia=leerString();
-				if (Usuario.usuarioExiste(usuario)) {
+				if (!Usuario.usuarioExiste(usuario)) {
 					throw new ValorInvalidoException("El usuario no existe.");
 				}
 				if (!Usuario.comprobarContraseniaCorrecta(usuario,contrasenia)) {
