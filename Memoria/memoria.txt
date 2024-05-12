@@ -10,3 +10,22 @@ En grupos:
 Para el cliente:
   cambiar agregarGrupo, por salir del grupo y quitar la opcion de eliminar gastos. 
   
+
+03-05-2024
+	Comentamos entre los tres el diagrama de clases e hicimos una primera version.
+	Decidimos los campos y las tablas de la base de datos
+	Nos dividimos parte del trabajo para ir empezando
+		Rafa: Metodos del usuario
+			-String iniciarSesion()	//Pide usuario y contraseña y devuelve el usuario si los datos son correctos
+			-void crearUsuario()	//Pide usuario y contraseña y comprueba que sean validos antes de crearlo
+			-void usuarioValido(String usuario)	//Comprueba si el nombre de usuario cumple los requisitos
+			-boolean usuarioExiste(String usuario)	//Comprueba si el nombre de usuario esta en la base de datos
+			-void contraseniaValida(String pass)	//Comprueba si la contraseña cumple los requisitos
+			-boolean comprobarContraseniaCorrecta(String usuario, String pass)	//Comprueba en la base de datos si los datos de usuario y contraseña existen
+		
+		Dani: Metodos para crear, borrar y calcular los gastos
+			-crearGasto()
+			-eliminarGasto()
+			-calcularGasto()
+			
+		Alvaro: Creacion de la base de datos y los metodos para interactuar con ella desde el programa
