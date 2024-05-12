@@ -12,20 +12,79 @@ Para el cliente:
   
 
 03-05-2024
+	
 	Comentamos entre los tres el diagrama de clases e hicimos una primera version.
 	Decidimos los campos y las tablas de la base de datos
 	Nos dividimos parte del trabajo para ir empezando
+
 		Rafa: Metodos del usuario
 			-String iniciarSesion()	//Pide usuario y contraseña y devuelve el usuario si los datos son correctos
+			
 			-void crearUsuario()	//Pide usuario y contraseña y comprueba que sean validos antes de crearlo
+			
 			-void usuarioValido(String usuario)	//Comprueba si el nombre de usuario cumple los requisitos
+			
 			-boolean usuarioExiste(String usuario)	//Comprueba si el nombre de usuario esta en la base de datos
+			
 			-void contraseniaValida(String pass)	//Comprueba si la contraseña cumple los requisitos
+			
 			-boolean comprobarContraseniaCorrecta(String usuario, String pass)	//Comprueba en la base de datos si los datos de usuario y contraseña existen
 		
 		Dani: Metodos para crear, borrar y calcular los gastos
+			
 			-crearGasto()
+			
 			-eliminarGasto()
+			
 			-calcularGasto()
 			
+		
 		Alvaro: Creacion de la base de datos y los metodos para interactuar con ella desde el programa
+
+
+
+07-05-2024
+	
+	Diagrama de clases terminado
+
+	Base de datos comenzada
+
+	Metodos anteriores comenzados
+
+
+
+10-05-2024
+
+	Inicio de las clases:
+		ConBD
+
+		CrearBD
+
+		Gastos
+
+		Grupo
+
+		Main
+
+		Usuario
+
+
+
+12-05-2024
+	
+	Creación de clase conectadora de base de datos, arreglado CrearBD y añadido ejemplos en Main
+
+	Se añadió más contenido del Usuario
+
+	Se añadió más contenido del Main
+
+	Se añadió la excepcion de valorInvalido
+
+	Se añadio más contenido del Grupo
+
+
+
+
+
+
+
