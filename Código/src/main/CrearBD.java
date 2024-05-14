@@ -13,9 +13,6 @@ public class CrearBD {
  * en base a los diagramas que hemos hecho,
  * a su vez tambien trae secciones comentadas para borrar
  * y probar la base de datos.
- * Os recomiendo instalar Docker desktop (ya que todos estamos en windows),
- * y en una terminal en windows lanzar el comando que puso María José
- * en la plataforma
  */
      public static void main(String[] args) {
           Connection con;
