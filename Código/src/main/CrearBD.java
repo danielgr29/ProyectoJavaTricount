@@ -46,18 +46,18 @@ public class CrearBD {
                          +
                          "PRIMARY KEY(nombre));";
                sentencia.executeUpdate(sql);
-               sql = "CREATE TABLE grupos(IdGrupo CHAR(7) NOT NULL, nombreGrupo VARCHAR(30) NOT NULL, admin VARCHAR(30), "
+               sql = "CREATE TABLE grupos(IdGrupo int NOT NULL AUTO_INCREMENT, nombreGrupo VARCHAR(30) NOT NULL, admin VARCHAR(30), "
                          +
                          "PRIMARY KEY(IdGrupo), " +
                          "FOREIGN KEY (admin) REFERENCES usuarios (nombre));";
                sentencia.executeUpdate(sql);
-               sql = "CREATE TABLE gastos(GastosId CHAR(7) NOT NULL, cantidad DOUBLE(12,2) NOT NULL, " +
-                         "descripcion VARCHAR(50), fecha DATE NOT NULL, nombre VARCHAR(30), IdGrupo CHAR(7), " +
+               sql = "CREATE TABLE gastos(GastosId int NOT NULL AUTO_INCREMENT, cantidad DOUBLE(12,2) NOT NULL, " +
+                         "descripcion VARCHAR(50), fecha DATE NOT NULL, nombre VARCHAR(30), IdGrupo int, " +
                          "PRIMARY KEY(GastosId), " +
                          "FOREIGN KEY (nombre) REFERENCES usuarios (nombre), " +
                          "FOREIGN KEY (IdGrupo) REFERENCES grupos (IdGrupo));";
                sentencia.executeUpdate(sql);
-               sql = "CREATE TABLE miembros(nombre VARCHAR(30), IdGrupo CHAR(7), " +
+               sql = "CREATE TABLE miembros(nombre VARCHAR(30), IdGrupo int, " +
                          "PRIMARY KEY(nombre, IdGrupo), " +
                          "FOREIGN KEY (nombre) REFERENCES usuarios (nombre), " +
                          "FOREIGN KEY (IdGrupo) REFERENCES grupos (IdGrupo));";
