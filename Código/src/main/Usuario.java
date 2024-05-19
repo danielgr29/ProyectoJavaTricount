@@ -16,7 +16,7 @@ public class Usuario {
 	public void crearUsuarioBD() {
 		if (contraValida(this.contra) | usuarioValido(this.nombre) | !existeUsuario()) {
 
-			String sql = "INSERT INTO usuarios VALUES ('" + this.nombre + "', '" + this.nombre + "', '"
+			String sql = "INSERT INTO usuarios VALUES ('" + this.nombre + "', '" + this.contra + "', '"
 					+ this.nombreCompleto + "');";
 			ConBD.executeUpdate(sql);
 		}
