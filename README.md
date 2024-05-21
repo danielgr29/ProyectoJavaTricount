@@ -23,3 +23,7 @@ Partes del trabajo:
 5. **Funcionalidad extra - Cierre de gastos:**
     - Implementación de transacciones: permite a los usuarios realizar transferencias de dinero entre ellos para equilibrar los saldos y cerrar los gastos del viaje.
     - Registro de transacciones: registra todas las transacciones realizadas para un seguimiento transparente de los pagos y saldos finales.
+
+
+
+CAMBIAR LAS CARPETAS DEL CODIGO Y DEJAR UNA
