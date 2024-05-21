@@ -84,14 +84,31 @@ Para el cliente:
 	
 	
 
-
-13-05-2024
+14-05-2024
 
 	Terminado Diagrama de casos de uso 
-	Ampliado Usuario y empezado menú. Añadida excepción personalizada
+
+	Ampliado Usuario y empezado menú. 
+
+	Añadida excepción personalizada
+
+
+
+18-05-2024
+
+	typo
+
+	modificado las tablas grupos y gastos de la base de datos para que sus claves primarias sean autoincrementables
 	
+	Añadido modelo relacional	
 	
 
 
+19-05-2024
 
+	Se cambio parte de Usuario
+
+	Se cambio parte del Main
+
+	Se cambio parte de Grupo
 
