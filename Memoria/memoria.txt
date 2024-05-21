@@ -81,9 +81,16 @@ Para el cliente:
 	Se añadió la excepcion de valorInvalido
 
 	Se añadio más contenido del Grupo
+	
+	
 
 
+13-05-2024
 
+	Terminado Diagrama de casos de uso 
+	Ampliado Usuario y empezado menú. Añadida excepción personalizada
+	
+	
 
 
 
