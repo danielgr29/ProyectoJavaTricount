@@ -46,6 +46,7 @@ public class Gasto {
 			try {
 				importe=scanner.nextDouble();
 			}catch (Exception e) {
+				scanner.nextLine();
 				throw new ValorInvalidoException("Importe no valido.");
 			}
 			
@@ -68,6 +69,7 @@ public class Gasto {
 			try {
 				idGasto=scanner.nextInt();
 			}catch (Exception e) {
+				scanner.nextLine();
 				throw new ValorInvalidoException("Id no valida.");
 			}
 			comprobarIdGasto(idGasto,grupo);
