@@ -56,7 +56,7 @@ public class Grupo {
 			scanner.nextLine();
 			try {
 				idGrupo=scanner.nextInt();
-			}catch (Exception e) {throw new ValorInvalidoException("Valor no valido.");}
+			}catch (Exception e) {scanner.nextLine();throw new ValorInvalidoException("Valor no valido.");}
 			if (esAdmin(usuario,idGrupo)) {
 				String sql = "DELETE FROM miembros WHERE IdGrupo='"+idGrupo+"';";
 				ConBD.executeUpdate(sql);
