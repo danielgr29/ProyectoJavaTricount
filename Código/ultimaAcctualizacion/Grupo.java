@@ -173,48 +173,7 @@ public class Grupo {
 			System.out.println("Error "+e.getMessage());
 		}
 	}
-	public static void ajustarSaldo(int idGrupo) {
-		Map <String,Double> gastosPositivo = new HashMap<>();
-		Map <String,Double> gastosNegativo = new HashMap<>();
-		try {
-			double total=0, totalUsuario;
-			int miembros=0;
-			String sql2, sql="SELECT * FROM gastos WHERE IdGrupo='"+idGrupo+"';";
-			ResultSet rs2,rs=ConBD.executeQuery(sql);
-			while (rs.next()) {
-				total=total+rs.getDouble("cantidad");
-			}
-			String usuario;
-			sql="SELECT * FROM miembros WHERE IdGrupo='"+idGrupo+"';";
-			rs=ConBD.executeQuery(sql);
-			while (rs.next()) {
-				miembros=miembros+1;
-			}
-			double media=total/miembros;
-			rs=ConBD.executeQuery(sql);
-			while (rs.next()) {
-				usuario=rs.getString("nombre");
-				sql2="SELECT * FROM gastos WHERE IdGrupo='"+idGrupo+"' AND nombre='"+usuario+"';";
-				rs2=ConBD.executeQuery(sql2);
-				totalUsuario=0;
-				while(rs2.next()) {
-					totalUsuario=totalUsuario+rs2.getDouble("cantidad");
-				}
-				totalUsuario=totalUsuario/media;
-				if(totalUsuario>0) {gastosPositivo.put(usuario, totalUsuario);}
-				if(totalUsuario<0) {gastosNegativo.put(usuario, totalUsuario);}
-			}
-			if(gastosNegativo.size()==0) {
-				System.out.println("El saldo esta ajustado");
-			}else {
-				
-			}
-			
-		}catch (SQLException e) {
-			System.out.println("Error "+e.getMessage());
-		}
-		
-	}
+	
 	private static boolean esMiembro(int IdGrupo,String usuario) throws SQLException {	//comprueba si un usuario es miembro de un grupo, ambos pasados por parametro
 		try {
 			String sql="SELECT * FROM miembros WHERE IdGrupo='"+IdGrupo+"';";
