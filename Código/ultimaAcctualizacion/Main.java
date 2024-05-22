@@ -21,7 +21,7 @@ public class Main {
 					try {
 						op=scanner.nextInt();
 					}catch (Exception e) {op=-1;}
-					if (op<0||op>2) {System.out.println("\nOpción no valida\n");}
+					if (op<0||op>2) {System.out.println("\nOpción no valida");scanner.nextLine();}
 				}while (op<0||op>2);
 				switch (op) {
 				case 1:
@@ -42,8 +42,8 @@ public class Main {
 					menuUsuario(usuario);
 					try {
 						op=scanner.nextInt();
-					}catch (Exception e) {op=-1;}
-					if (op<0||op>5) {System.out.println("\nOpción no valida\n");}
+					}catch (Exception e) {op=-1;scanner.nextLine();}
+					if (op<0||op>5) {System.out.println("\nOpción no valida");}
 				}while (op<0||op>5);
 				switch (op) {
 				case 1:
@@ -74,16 +74,18 @@ public class Main {
 	}
 	
 	public static boolean elegirGrupo(String usuario,Scanner scanner){	
+		int IdGrupo=0;
+		scanner.nextLine();
+		System.out.print("Introduce Id del grupo: ");
 		try {
-			int IdGrupo=0;
-			System.out.print("Introduce Id del grupo: ");
 			try {
 				IdGrupo=scanner.nextInt();
-			}catch (Exception e) {throw new ValorInvalidoException("Valor no valido.");}
+			}catch (Exception e) {throw new ValorInvalidoException("\nValor no valido.");}
 			Grupo.comprobarIdGrupoSeleccionada(IdGrupo,usuario);	//comprueba que el grupo exista y el usuario sea mienbro
 			Grupo grupo=Grupo.descargarGrupo(IdGrupo);	//guarda los datos del grupo seleccionado en una variable
 			return opcionesGrupo(grupo,usuario,scanner);	//llama a la funcion donde estan las opciones de grupo
 		} catch (ValorInvalidoException e) {
+			scanner.nextLine();
 			System.out.println(e.getMessage());
 		}
 		return false;
@@ -91,6 +93,7 @@ public class Main {
 	public static boolean opcionesGrupo(Grupo grupo,String usuario,Scanner scanner) throws ValorInvalidoException {
 		boolean salir=false, opValida=false;
 		int op;
+		scanner.nextLine();
 		while (!salir) {
 			do {
 				menuGrupo(usuario,grupo);
@@ -98,8 +101,8 @@ public class Main {
 				try {
 					op=scanner.nextInt();
 				}catch (Exception e) {op=-1;}
-				if ((op<0||op>5)&&!grupo.getAdministrador().equals(usuario)) {System.out.println("\nOpción no valida\n");}
-				else if (op<0||op>8) {System.out.println("\nOpción no valida\n");}
+				if ((op<0||op>5)&&!grupo.getAdministrador().equals(usuario)) {System.out.println("\nOpción no valida");scanner.nextLine();}
+				else if (op<0||op>8) {System.out.println("\nOpción no valida");scanner.nextLine();}
 				else {opValida=true;}
 			}while (!opValida);
 			switch (op) {
