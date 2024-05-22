@@ -61,7 +61,7 @@ public class Usuario{
 			String sql="SELECT nombre FROM usuarios WHERE nombre='"+usuario+"'";	//Sentencia de sql para comprobar si el usuario esta en la base de datos
 			ResultSet rs=ConBD.executeQuery(sql);
 			if(rs.next()) {	
-				return true;
+				if(rs.getString("nombre").equals(usuario)) {return true;}
 			}
 		}catch (SQLException e) {
 			System.out.println("Error "+e.getMessage());
