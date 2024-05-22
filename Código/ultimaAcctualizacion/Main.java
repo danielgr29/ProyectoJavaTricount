@@ -76,6 +76,7 @@ public class Main {
 	public static boolean elegirGrupo(String usuario,Scanner scanner){	
 		int IdGrupo=0;
 		scanner.nextLine();
+		Grupo.verGrupos(usuario);
 		System.out.print("Introduce Id del grupo: ");
 		try {
 			try {
