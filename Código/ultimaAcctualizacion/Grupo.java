@@ -125,12 +125,14 @@ public class Grupo {
         String nombre = scanner.nextLine();
         try {
         	if (!Usuario.usuarioExiste(nombre)) {
-				throw new ValorInvalidoException("El usuario no existe.");
-			}
-			if(!esMiembro(grupo.getIdGrupo(), nombre)) {
-				throw new ValorInvalidoException("No hay ningun miembro con ese nombre.");
-			}
-			String sql = "DELETE FROM miembros WHERE IdGrupo = " + grupo.getIdGrupo() + " AND nombre = '" + nombre + "';";
+			throw new ValorInvalidoException("El usuario no existe.");
+		}
+		if(!esMiembro(grupo.getIdGrupo(), nombre)) {
+			throw new ValorInvalidoException("No hay ningun miembro con ese nombre.");
+		}
+		String sql = "DELETE FROM gastos WHERE IdGrupo = " + grupo.getIdGrupo() + " AND nombre = '" + nombre + "';";
+		ConBD.executeUpdate(sql);
+		sql = "DELETE FROM miembros WHERE IdGrupo = " + grupo.getIdGrupo() + " AND nombre = '" + nombre + "';";
 	        ConBD.executeUpdate(sql);
 	        System.out.println("Miembro eliminado del grupo.");
 		} catch (SQLException e) {
