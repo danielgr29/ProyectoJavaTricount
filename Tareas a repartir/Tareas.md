@@ -1,33 +1,33 @@
 Mostrar las lista de los metodos mas importantes de cada clase:
 
 Usuario:
-
-	+String iniciarSesion(Scanner scanner)
-	+void crearUsuario(Scanner scanner)
-	+String obtenerNombreCompleto(String usuario)
-	-void guardarUsuarioBD(String usuario, String contrasenia, String nombreCompleto)
+	
+		+String iniciarSesion(Scanner scanner)
+		+void crearUsuario(Scanner scanner)
+		+String obtenerNombreCompleto(String usuario)
+		-void guardarUsuarioBD(String usuario, String contrasenia, String nombreCompleto)
 
 Grupo:
 
-	+void comprobarIdGrupoSeleccionada(int IdGrupo,String usuario)	//Comprueba que el usuario es miembro del grupo 
-	+void calcularSaldo(int idGrupo)	//Muestra cuanto ha aportado de mas o de menos cada usuario del grupo
-	+Grupo descargarGrupo(int IdGrupo)	//Guarda en una variable tipo Grupo los datos del grupo con la id introducida
-	-void guardarGrupoBD(String nombreGrupo,String usuario)
+		+void comprobarIdGrupoSeleccionada(int IdGrupo,String usuario)	//Comprueba que el usuario es miembro del grupo 
+		+void calcularSaldo(int idGrupo)	//Muestra cuanto ha aportado de mas o de menos cada usuario del grupo
+		+Grupo descargarGrupo(int IdGrupo)	//Guarda en una variable tipo Grupo los datos del grupo con la id introducida
+		-void guardarGrupoBD(String nombreGrupo,String usuario)
 
 
 Gasto:
 
-	+void verGastos(Grupo grupo)
-	+void agregarGasto(Grupo grupo,String usuario,Scanner scanner)	//recoge por teclado los datos de un gasto y se los pasa a agregarGastoBD
-	-void agregarGasto(double importe,String desc,String fecha,String usuario, int idgrupo)	//guarda el gasto en la base de datos
-	+void eliminarGasto(Grupo grupo,Scanner scanner)
+		+void verGastos(Grupo grupo)
+		+void agregarGasto(Grupo grupo,String usuario,Scanner scanner)	//recoge por teclado los datos de un gasto y se los pasa a agregarGastoBD
+		-void agregarGasto(double importe,String desc,String fecha,String usuario, int idgrupo)	//guarda el gasto en la base de datos
+		+void eliminarGasto(Grupo grupo,Scanner scanner)
 
 
 ConBD:
 
-	+void executeUpdate(String sql)
-	+ResultSet executeQuery(String sql)
-	+void conClose()
+		+void executeUpdate(String sql)
+		+ResultSet executeQuery(String sql)
+		+void conClose()
 
 
 
@@ -35,50 +35,50 @@ TODOS LOS METODOS DE CADA CLASE:
 
 Usuario;
 
-	+String iniciarSesion(Scanner scanner)
-	+void crearUsuario(Scanner scanner)
-	-void usuarioValido(String usuario)
-	+boolean usuarioExiste(String usuario)
-	-void contraseniaValida(String pass)
-	+boolean comprobarContraseniaCorrecta(String usuario, String pass)
-	-void nombreCompletoValido(String nombreCompleto)
-	+String obtenerNombreCompleto(String usuario)
-	-void guardarUsuarioBD(String usuario, String contrasenia, String nombreCompleto)
+		+String iniciarSesion(Scanner scanner)
+		+void crearUsuario(Scanner scanner)
+		-void usuarioValido(String usuario)
+		+boolean usuarioExiste(String usuario)
+		-void contraseniaValida(String pass)
+		+boolean comprobarContraseniaCorrecta(String usuario, String pass)
+		-void nombreCompletoValido(String nombreCompleto)
+		+String obtenerNombreCompleto(String usuario)
+		-void guardarUsuarioBD(String usuario, String contrasenia, String nombreCompleto)
 
 Grupo;
 
-	+void verGrupos(String usuario)
-	+void crearGrupo(String usuario,Scanner scanner)
-	+void eliminarGrupo(String usuario,Scanner scanner)
-	+void comprobarIdGrupoSeleccionada(int IdGrupo,String usuario)	//Comprueba que el usuario es miembro del grupo 
-	+void verMiembros(int idGrupo)
-	+void anadirMiembro(Grupo grupo, Scanner scanner)
-	+void eliminarMiembro(Grupo grupo, Scanner scanner)
-	+void calcularSaldo(int idGrupo)	//Muestra cuanto ha aportado de mas o de menos cada usuario del grupo
-	-boolean esMiembro(int IdGrupo,String usuario)
-	-boolean esAdmin(String usuario,int idGrupo)
-	-void comprobarNombreGrupo(String nombreGrupo,String usuario)
-	+Grupo descargarGrupo(int IdGrupo)	//Guarda en una variable tipo Grupo los datos del grupo con la id introducida
-	-void guardarGrupoBD(String nombreGrupo,String usuario)
+		+void verGrupos(String usuario)
+		+void crearGrupo(String usuario,Scanner scanner)
+		+void eliminarGrupo(String usuario,Scanner scanner)
+		+void comprobarIdGrupoSeleccionada(int IdGrupo,String usuario)	//Comprueba que el usuario es miembro del grupo 
+		+void verMiembros(int idGrupo)
+		+void anadirMiembro(Grupo grupo, Scanner scanner)
+		+void eliminarMiembro(Grupo grupo, Scanner scanner)
+		+void calcularSaldo(int idGrupo)	//Muestra cuanto ha aportado de mas o de menos cada usuario del grupo
+		-boolean esMiembro(int IdGrupo,String usuario)
+		-boolean esAdmin(String usuario,int idGrupo)
+		-void comprobarNombreGrupo(String nombreGrupo,String usuario)
+		+Grupo descargarGrupo(int IdGrupo)	//Guarda en una variable tipo Grupo los datos del grupo con la id introducida
+		-void guardarGrupoBD(String nombreGrupo,String usuario)
 
 
 Gasto:
 
-	+void verGastos(Grupo grupo)
-	+void agregarGasto(Grupo grupo,String usuario,Scanner scanner)	//recoge por teclado los datos de un gasto y se los pasa a agregarGastoBD
-	-void agregarGasto(double importe,String desc,String fecha,String usuario, int idgrupo)	//guarda el gasto en la base de datos
-	+void eliminarGasto(Grupo grupo,Scanner scanner)
-	-void comprobarIdGasto(int idGasto,Grupo grupo)
-	-void comprobarDescripcion(String desc)
-	-void comprobarFecha(String fecha)
+		+void verGastos(Grupo grupo)
+		+void agregarGasto(Grupo grupo,String usuario,Scanner scanner)	//recoge por teclado los datos de un gasto y se los pasa a agregarGastoBD
+		-void agregarGasto(double importe,String desc,String fecha,String usuario, int idgrupo)	//guarda el gasto en la base de datos
+		+void eliminarGasto(Grupo grupo,Scanner scanner)
+		-void comprobarIdGasto(int idGasto,Grupo grupo)
+		-void comprobarDescripcion(String desc)
+		-void comprobarFecha(String fecha)
 
 
 ConBD:
 
-	+void executeUpdate(String sql)
-	+ResultSet executeQuery(String sql)
-	+void conClose()
-
+		+void executeUpdate(String sql)
+		+ResultSet executeQuery(String sql)
+		+void conClose()
+	
 
 
 
@@ -86,35 +86,35 @@ TAREAS DE CADA MIEBRO DEL GRUPO:
 
 Rafa(JefeGrupo); 
 
-		 GASTOS.
-	  
-	  	 MAIN.
-	    
-	    	 GRUPOS.
-
+			 GASTOS.
+		  
+		  	 MAIN.
+		    
+		    	 GRUPOS.
+	
 
 
 	
 
 Álvaro;
 
-	USUARIO. 
- 
- 	BD. 	
-  	
-   	GRUPOS.
-
- 
+		USUARIO. 
+	 
+	 	BD. 	
+	  	
+	   	GRUPOS.
+	
+	 
 
 
 Daniel Gutiérrez;
-
-	DIAGRAMAS
- 
-	PRESENTACION 
-
-	DOCUMENTACION
- 
-	REPOSITORIO
-
-	Metodos: Añadir un gasto. // Eliminar un gasto.
+	
+		DIAGRAMAS
+	 
+		PRESENTACION 
+	
+		DOCUMENTACION
+	 
+		REPOSITORIO
+	
+		Metodos: Añadir un gasto. // Eliminar un gasto.
