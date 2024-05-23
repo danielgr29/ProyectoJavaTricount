@@ -86,12 +86,13 @@ TAREAS DE CADA MIEBRO DEL GRUPO:
 
 Rafa(JefeGrupo); 
 
-	 GASTOS.
-  
-  	 MAIN.
-    
-    	 GRUPO.
- 	
+		 GASTOS.
+	  
+	  	 MAIN.
+	    
+	    	 GRUPOS.
+
+
 
 	
 
