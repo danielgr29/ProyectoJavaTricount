@@ -72,4 +72,4 @@ Daniel Gutiérrez;
  
 	REPOSITORIO
 
-	Metodos: Añadir un gasto. // Eliminar un gasto. // Clases grupo, Usuarios, gastos;
+	Metodos: Añadir un gasto. // Eliminar un gasto.
