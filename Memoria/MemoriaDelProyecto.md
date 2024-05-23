@@ -125,3 +125,17 @@ Para el cliente:
 21-05-2024
 
 	Lista de todos los metodos de las clases
+
+
+
+22-05-2024
+
+ 	Ultima versión del programa
+	Update Gasto.java
+	Update ConBD.java
+	Update Grupo.java
+	Update Main.java
+	Update Usuario.java
+	Update ValorInvalidoException.java
+	Update Grupo.java - Se quitó una parte que sobraba
+	Agregado DiagramasDeClase_03.drawio.drawio.pdf
