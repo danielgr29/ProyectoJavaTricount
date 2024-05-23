@@ -100,8 +100,6 @@ Rafa;
 	 
 	 	BD. 	
 	  	
-	   	GRUPOS.
-	
 	 
 
 
