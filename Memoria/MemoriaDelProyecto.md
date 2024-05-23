@@ -112,3 +112,16 @@ Para el cliente:
 
 	Se cambio parte de Grupo
 
+
+20-05-2024
+
+	Definido el Main del programa en general, creado sistema de gestion de grupos y añadido funcion de ver y agregar gastos
+
+	Agregado DiagramaDeCasosDeUso.drawio.pdf
+ 	
+  	Agregado DiagramaDeCasosDeUso2.drawio.pdf
+
+
+21-05-2024
+
+	Lista de todos los metodos de las clases
