@@ -84,15 +84,13 @@ ConBD:
 
 TAREAS DE CADA MIEBRO DEL GRUPO:
 
-Rafa(JefeGrupo); 
+Rafa; 
 
-			 GASTOS.
-		  
-		  	 MAIN.
-		    
-		    	 GRUPOS.
-	
-
+		GASTOS. 
+	 
+	 	MAIN. 	
+	  	
+	   	GRUPOS.
 
 	
 
